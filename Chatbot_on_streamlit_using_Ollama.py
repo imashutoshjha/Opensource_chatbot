@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 os.environ["LANGCHAIN_API_KEY"]=st.secrets["LANGCHAIN_API_KEY"]
-os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_PROJECT"]="Simple Q&A Chatbot With Ollama"
+# os.environ["LANGCHAIN_TRACING_V2"]="true"
+# os.environ["LANGCHAIN_PROJECT"]="Simple Q&A Chatbot With Ollama"
 
 prompt=ChatPromptTemplate.from_messages(
     [
